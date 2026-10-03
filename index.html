@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المنصة الأكاديمية للاختبارات | برمجة متقدمة ومعمارية البرمجيات</title>
+  <meta name="description" content="منصة متقدمة وفاخرة لاختبارات البرمجة المتقدمة ومعمارية البرمجيات (844 سؤالاً مع الحل والشرح الدقيق). تصميم المهندس عباس المتوكل.">
+  
+  <!-- Modern Google Fonts: Cairo (Arabic) & Plus Jakarta Sans (English) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Luxury Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Light Mesh Background -->
+  <div class="bg-mesh"></div>
+
+  <!-- Top Navigation Header -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand btn-home" title="العودة إلى الصفحة الرئيسية">
+        <div class="brand-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <div class="brand-info">
+          <h1>AP EXAM HUB</h1>
+          <p>Advanced Programming & Architecture</p>
+        </div>
+      </div>
+
+
+
+      <div class="nav-actions">
+        <!-- Dedicated Home Icon Button -->
+        <button class="btn btn-secondary btn-home" id="nav-btn-home" title="العودة إلى الصفحة الرئيسية">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+          <span class="desktop-only">الرئيسية</span>
+        </button>
+
+        <button class="btn btn-secondary" id="nav-btn-bank" title="تصفح بنك الأسئلة الشامل (844 سؤال)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span class="desktop-only">بنك الأسئلة</span>
+        </button>
+
+        <button class="btn btn-icon-only" id="btn-toggle-sound" title="تفعيل/كتم الصوت التفاعلي">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          </svg>
+        </button>
+
+        <button class="btn btn-icon-only" id="btn-toggle-theme" title="التبديل بين الوضع الليلي والنهاري">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Application Wrapper -->
+  <main class="app-container">
+
+    <!-- ====================================================================
+         VIEW 1: SETUP & DASHBOARD
+         ==================================================================== -->
+    <section id="setup-view" class="view active">
+      
+      <!-- Hero Banner -->
+      <div class="hero-card">
+        <div class="hero-content">
+          <div class="hero-badge-row">
+            <div class="hero-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+              <span>نظام التقييم والاختبارات الأكاديمية المتطورة</span>
+            </div>
+
+            <div class="designer-hero-pill" title="هندسة وتصميم واجهات المنصة">
+              <span class="pill-dot"></span>
+              <span>تصميم وهندسة المنصة: <strong>ENG. Abbas Almotawakel</strong></span>
+            </div>
+          </div>
+
+          <h2 class="hero-title">منصة اختبارات البرمجة المتقدمة ومعمارية النظم</h2>
+          <p class="hero-description">
+            منظومة تدريبية واختبارية متكاملة وشاملة مبنية استناداً إلى بنك الأسئلة المعتمد لقسم علوم الحاسوب. 
+            تغطي المنصة الآن <strong>844 سؤالاً نموذجياً كاملاً</strong> عبر <strong>8 وحدات دراسية متقدمة</strong> تشمل بيئة .NET، مبادئ SOLID، أنماط التصميم (الإنشائية، الهيكلية، والسلوكية)، المعمارية النظيفة Clean Architecture، واجهات برمجة التطبيقات Web APIs وأمانها (JWT, OAuth 2.0, REST, gRPC)، البرمجة غير المتزامنة والتوازي وإدارة الذاكرة، والخدمات المصغرة Microservices وهندسة الذكاء الاصطناعي و RAG.
+          </p>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Strip -->
+      <div class="stats-strip">
+        <div class="stat-box">
+          <div class="stat-icon gold">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+          </div>
+          <div class="stat-data">
+            <h3 id="stat-total-q">844</h3>
+            <p>إجمالي الأسئلة المتاحة</p>
+          </div>
+        </div>
+
+        <div class="stat-box">
+          <div class="stat-icon cyan">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <div class="stat-data">
+            <h3>8</h3>
+            <p>وحدات دراسية ومحاضرات</p>
+          </div>
+        </div>
+
+        <div class="stat-box">
+          <div class="stat-icon emerald">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="8" r="7"></circle>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+          </div>
+          <div class="stat-data">
+            <h3 id="stat-completed-tests">0</h3>
+            <p>اختبارات منجزة بجلساتك</p>
+          </div>
+        </div>
+
+        <div class="stat-box">
+          <div class="stat-icon purple">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
+          <div class="stat-data">
+            <h3 id="stat-best-score">—</h3>
+            <p>أعلى نسبة محققة</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quiz Customization Setup Panel -->
+      <div class="setup-panel">
+        <div class="panel-header">
+          <div>
+            <h2>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--gold-500)" stroke-width="2.5">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+              </svg>
+              <span>تخصيص وإعداد جلسة الاختبار</span>
+            </h2>
+            <p>حدد المحاضرات، كمية الأسئلة، ونمط الامتحان المناسب لأهدافك</p>
+          </div>
+          <div class="quick-select-row">
+            <button class="btn-chip" id="btn-select-all-lec">تحديد كل المحاضرات (8)</button>
+            <button class="btn-chip" id="btn-select-only-latest">المعمارية النظيفة فقط</button>
+          </div>
+        </div>
+
+        <!-- 1. Lectures Multi-Selector -->
+        <div class="section-label">
+          <span>1. اختر المحاضرات المستهدفة في الاختبار:</span>
+          <span style="font-size: 0.8rem; color: var(--gold-400);">يمكنك اختيار أكثر من محاضرة معاً</span>
+        </div>
+        <div class="lectures-grid" id="lectures-grid">
+          <!-- Dynamically Injected by JS -->
+        </div>
+
+        <!-- 2. Question Count & Options Controls -->
+        <div class="control-row">
+          <!-- Count Control Box -->
+          <div class="control-box">
+            <div class="section-label">
+              <span>2. حدد عدد الأسئلة المطلوبة:</span>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">
+                المتاح حالياً: <strong id="pool-available-count" style="color:var(--gold-400)">844</strong> سؤال
+              </span>
+            </div>
+
+            <div class="count-chips-group">
+              <button class="count-chip" data-count="10">10 أسئلة</button>
+              <button class="count-chip active" data-count="20">20 سؤال</button>
+              <button class="count-chip" data-count="30">30 سؤال</button>
+              <button class="count-chip" data-count="50">50 سؤال</button>
+              <button class="count-chip" data-count="all">كل الأسئلة</button>
+            </div>
+
+            <div class="slider-container">
+              <input type="range" id="question-slider" class="slider-input" min="5" max="844" value="20" step="1">
+              <div class="slider-val-badge" id="slider-val">20</div>
+            </div>
+          </div>
+
+          <!-- Randomization & Timers Box -->
+          <div class="control-box">
+            <div class="section-label">
+              <span>3. خيارات التخصيص والمؤقت:</span>
+            </div>
+
+            <div class="toggles-list">
+              <label class="toggle-item">
+                <div class="toggle-info">
+                  <span class="toggle-title">ترتيب الأسئلة عشوائياً</span>
+                  <span class="toggle-desc">خلط ترتيب الأسئلة في كل اختبار لتجنب الحفظ الشكلي</span>
+                </div>
+                <div class="switch">
+                  <input type="checkbox" id="toggle-rand-q" checked>
+                  <span class="slider-toggle"></span>
+                </div>
+              </label>
+
+              <label class="toggle-item">
+                <div class="toggle-info">
+                  <span class="toggle-title">خلط ترتيب خيارات الإجابة (A, B, C, D)</span>
+                  <span class="toggle-desc">تغيير مواقع الإجابات عشوائياً لضمان الفهم التام</span>
+                </div>
+                <div class="switch">
+                  <input type="checkbox" id="toggle-rand-opt" checked>
+                  <span class="slider-toggle"></span>
+                </div>
+              </label>
+
+              <label class="toggle-item">
+                <div class="toggle-info">
+                  <span class="toggle-title">مؤقت زمني للاختبار (دقيقة لكل سؤال)</span>
+                  <span class="toggle-desc">محاكاة ضغط وقت الامتحان الحقيقي</span>
+                </div>
+                <div class="switch">
+                  <input type="checkbox" id="toggle-timer" checked>
+                  <span class="slider-toggle"></span>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Quiz Mode Picker -->
+        <div class="section-label" style="margin-top: 1rem;">
+          <span>4. اختر وضع الاختبار:</span>
+        </div>
+        <div class="mode-cards-grid">
+          <div class="mode-card active" data-mode="exam">
+            <div class="mode-icon">🎓</div>
+            <div class="mode-info">
+              <h4>وضع الاختبار الأكاديمي الحقيقي (Exam Mode)</h4>
+              <p>محاكاة تامة للامتحان النهائي، لا تظهر الإجابات الصحيحة إلا عند تسليم الاختبار كاملاً مع إظهار النسبة المئوية والتقرير التفصيلي.</p>
+            </div>
+          </div>
+
+          <div class="mode-card" data-mode="practice">
+            <div class="mode-icon">⚡</div>
+            <div class="mode-info">
+              <h4>وضع التدريب الفوري والشرح (Practice Mode)</h4>
+              <p>يظهر لك فور اختيار الإجابة ما إذا كانت صحيحة أو خاطئة مع التفسير العلمي المباشر لكل خيار من واقع المنهج والسلايدات.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Launch Quiz Action -->
+        <div class="launch-area">
+          <div class="pool-summary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>تم تجهيز اختبار مخصص يحتوي على <strong id="summary-q-count">20</strong> سؤالاً من المنهج</span>
+          </div>
+
+          <button class="btn btn-launch" id="btn-start-quiz">
+            <span>ابدأ الاختبار الآن</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ====================================================================
+         VIEW 2: ACTIVE QUIZ STAGE
+         ==================================================================== -->
+    <section id="quiz-view" class="view">
+      <div class="quiz-wrapper">
+        
+        <!-- Sticky Top Status & Progress Bar -->
+        <div class="quiz-top-bar">
+          <div class="quiz-top-left">
+            <button class="quiz-btn-home-back btn-home" id="quiz-btn-home" title="العودة إلى الصفحة الرئيسية">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+              <span>الرئيسية</span>
+            </button>
+          </div>
+
+          <div class="quiz-progress-section">
+            <div class="progress-header">
+              <span id="quiz-q-counter" class="counter">سؤال 1 من 20</span>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">اختبار مباشر</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" id="quiz-progress-fill"></div>
+            </div>
+          </div>
+
+          <div class="quiz-top-actions">
+            <!-- Timer Badge -->
+            <div class="timer-box" id="quiz-timer">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span id="timer-text">20:00</span>
+            </div>
+
+            <!-- Palette Drawer Trigger -->
+            <button class="palette-btn" id="btn-open-palette" title="لوحة الأسئلة">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+              </svg>
+              <span class="desktop-only">شبكة الأسئلة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Question Card -->
+        <div class="question-card" id="question-card">
+          <div class="question-header">
+            <div class="question-meta">
+              <span class="meta-badge lec" id="q-lec-badge">Lec 1</span>
+              <span class="meta-badge" id="q-topic-badge">SOLID - SRP</span>
+            </div>
+
+            <button class="btn-flag" id="btn-flag-q" title="تمييز السؤال بنجمة للمراجعة">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </button>
+          </div>
+
+          <!-- English Question Text -->
+          <div class="question-text" id="q-text">
+            Q1. Advanced Programming focuses on designing and developing:
+          </div>
+
+          <!-- 4 Options (A, B, C, D) -->
+          <div class="options-list" id="q-options-container">
+            <!-- Dynamically injected -->
+          </div>
+
+          <!-- Practice Mode Inline Explanation Card -->
+          <div id="q-explanation-container" style="display: none;"></div>
+        </div>
+
+        <!-- Navigation Controls Bar -->
+        <div class="quiz-controls-bar">
+          <div class="quiz-controls-left">
+            <button class="btn btn-secondary" id="btn-prev-q">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+              <span>السابق</span>
+            </button>
+
+            <button class="btn btn-secondary" id="btn-next-q">
+              <span>التالي</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <div class="quiz-controls-right">
+            <button class="btn btn-outline-gold" id="btn-submit-direct">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>تسليم الاختبار</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Slide-out Question Palette Drawer -->
+      <div class="palette-backdrop" id="palette-backdrop"></div>
+      <div class="palette-drawer" id="palette-drawer">
+        <div class="palette-header">
+          <h3>لوحة التنقل السريع للأسئلة</h3>
+          <button class="btn-icon-only" id="btn-close-palette">✕</button>
+        </div>
+
+        <div class="palette-legend">
+          <div class="legend-item">
+            <div class="legend-dot answered"></div>
+            <span>تمت الإجابة</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-dot unanswered"></div>
+            <span>متبقي</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-dot flagged"></div>
+            <span>مميز بنجمة</span>
+          </div>
+        </div>
+
+        <div class="palette-grid" id="palette-grid">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ====================================================================
+         VIEW 3: RESULTS & ANALYTICS
+         ==================================================================== -->
+    <section id="results-view" class="view">
+      
+      <!-- Hero Score & Gauge -->
+      <div class="results-hero">
+        
+        <!-- Animated Circular SVG Gauge -->
+        <div class="score-gauge-container">
+          <svg class="score-svg" viewBox="0 0 200 200">
+            <defs>
+              <linearGradient id="scoreGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#f59e0b" />
+                <stop offset="50%" stop-color="#06b6d4" />
+                <stop offset="100%" stop-color="#10b981" />
+              </linearGradient>
+            </defs>
+            <circle class="gauge-bg" cx="100" cy="100" r="85" />
+            <circle class="gauge-fill" id="res-gauge-fill" cx="100" cy="100" r="85" />
+          </svg>
+          <div class="gauge-text">
+            <span class="gauge-percent" id="res-percent">0.0%</span>
+            <span class="gauge-label">النسبة المئوية</span>
+          </div>
+        </div>
+
+        <!-- Grade Badge -->
+        <div class="result-tier-badge gold" id="res-tier-badge">
+          درجة الامتياز الفائق 🏆
+        </div>
+
+        <h2 class="result-title" id="res-title">أداء استثنائي ومستوى باهر!</h2>
+        <p class="result-subtitle" id="res-subtitle">
+          تهانينا! لقد أظهرت استيعاباً كاملاً لمفاهيم البرمجة المتقدمة وأنماط التصميم والمعمارية النظيفة.
+        </p>
+
+        <!-- Action Buttons -->
+        <div class="result-actions-row">
+          <button class="btn btn-primary" id="btn-retry-mistakes">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="1 4 1 10 7 10"></polyline>
+              <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+            </svg>
+            <span>إعادة محاولة الأخطاء فقط</span>
+            <span class="meta-badge" id="mistakes-count-badge" style="background: rgba(0,0,0,0.3); color:#fff;">0</span>
+          </button>
+
+          <button class="btn btn-secondary" id="btn-new-quiz">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+            </svg>
+            <span>بدء اختبار جديد بتخصيص مختلف</span>
+          </button>
+
+          <button class="btn btn-secondary btn-home" id="btn-results-home" title="العودة إلى الصفحة الرئيسية">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            <span>الصفحة الرئيسية</span>
+          </button>
+
+          <button class="btn btn-secondary" id="btn-print-results">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 6 2 18 2 18 9"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            <span>طباعة تقرير النتيجة</span>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Quick Metrics Strip -->
+      <div class="stats-strip" style="margin-bottom: 2rem;">
+        <div class="stat-box">
+          <div class="stat-icon emerald">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <div class="stat-data">
+            <h3 id="res-correct-count">0 / 0</h3>
+            <p>الإجابات الصحيحة</p>
+          </div>
+        </div>
+
+        <div class="stat-box">
+          <div class="stat-icon" style="background: rgba(244, 63, 94, 0.15); color: var(--rose-400);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </div>
+          <div class="stat-data">
+            <h3 id="res-wrong-count">0</h3>
+            <p>الإجابات الخاطئة</p>
+          </div>
+        </div>
+
+        <div class="stat-box">
+          <div class="stat-icon" style="background: rgba(255, 255, 255, 0.08); color: var(--text-muted);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+          </div>
+          <div class="stat-data">
+            <h3 id="res-unanswered-count">0</h3>
+            <p>أسئلة تم تجاوزها</p>
+          </div>
+        </div>
+
+        <div class="stat-box">
+          <div class="stat-icon cyan">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <div class="stat-data">
+            <h3 id="res-time-spent">00:00</h3>
+            <p>الوقت المستغرق</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Performance Breakdown by Lecture -->
+      <div class="breakdown-section">
+        <h3 class="breakdown-header">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold-500)" stroke-width="2">
+            <line x1="18" y1="20" x2="18" y2="10"></line>
+            <line x1="12" y1="20" x2="12" y2="4"></line>
+            <line x1="6" y1="20" x2="6" y2="14"></line>
+          </svg>
+          <span>تفصيل النسبة المئوية ومستوى الأداء حسب كل محاضرة:</span>
+        </h3>
+        <div class="breakdown-list" id="res-breakdown-list">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+
+      <!-- Question by Question Review -->
+      <div class="breakdown-section">
+        <div class="review-filter-bar">
+          <h3 class="breakdown-header" style="margin-bottom: 0;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--cyan-400)" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            <span>مراجعة الأسئلة مع التفسير العلمي النموذجي:</span>
+          </h3>
+
+          <div class="filter-pills">
+            <button class="filter-pill active" data-filter="all">الكل</button>
+            <button class="filter-pill" data-filter="wrong">الخاطئة فقط ❌</button>
+            <button class="filter-pill" data-filter="correct">الصحيحة فقط ✔️</button>
+            <button class="filter-pill" data-filter="flagged">المميزة بنجمة ⭐</button>
+          </div>
+        </div>
+
+        <div class="review-cards-list" id="res-review-container">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ====================================================================
+         VIEW 4: QUESTION BANK EXPLORER
+         ==================================================================== -->
+    <section id="bank-view" class="view">
+      <div class="bank-header">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:1rem;">
+          <div>
+            <h2>بنك الأسئلة الأكاديمي الشامل (844 سؤالاً)</h2>
+            <p>ابحث في نصوص الأسئلة، الخيارات، أو المفاهيم العلمية واطلع على الإجابة النموذجية فوراً</p>
+          </div>
+          <button class="btn btn-secondary btn-home" title="العودة إلى الصفحة الرئيسية">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            <span>العودة للرئيسية</span>
+          </button>
+        </div>
+
+        <div class="search-box-wrapper">
+          <input type="text" id="bank-search-input" class="search-input" placeholder="اكتب كلمة للبحث (مثال: Singleton, SOLID, EF Core, Proxy, Bertrand Meyer)...">
+          <div class="search-icon">🔍</div>
+        </div>
+
+        <div class="bank-filters" id="bank-lec-filters">
+          <!-- Injected dynamically -->
+        </div>
+      </div>
+
+      <div class="bank-results-count" id="bank-results-counter">
+        جاري تحميل الأسئلة...
+      </div>
+
+      <div id="bank-cards-container">
+        <!-- Injected dynamically -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Luxury Platform Footer with Designer Attribution -->
+  <footer class="app-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <div>
+          <h4>AP EXAM HUB — المنصة الأكاديمية لاختبارات البرمجة المتقدمة</h4>
+          <p>بنوك الأسئلة المعتمدة الشاملة (844 سؤالاً) • كلية الحاسوب وتكنولوجيا المعلومات</p>
+        </div>
+      </div>
+
+      <div class="footer-credits">
+        <div class="designer-card-footer" title="تصميم وبرمجة المنصة">
+          <div class="designer-badge-icon">👨‍💻</div>
+          <div class="designer-footer-text">
+            <span class="sub">تصميم وتطوير المهندس:</span>
+            <strong class="name">ENG. Abbas Almotawakel</strong>
+            <span class="ar-name">(م. عباس المتوكل)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-stats-note">
+        <span>844 سؤالاً متكاملاً</span> • <span>8 وحدات دراسية</span> • <span>نظام تقييم فوري وتحليلي</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Submit Confirmation Dialog Modal -->
+  <div class="modal-overlay" id="confirm-modal">
+    <div class="modal-content">
+      <h3>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--gold-500)" stroke-width="2.5" style="vertical-align: middle; margin-left: 0.4rem;">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="8" x2="12" y2="12"></line>
+          <line x1="12" y1="16" x2="12.01" y2="16"></line>
+        </svg>
+        <span>تأكيد إنهاء وتسليم الاختبار</span>
+      </h3>
+      <p id="modal-unanswered-text">
+        لديك بعض الأسئلة التي لم تجب عليها بعد. هل ترغب فعلاً بالتسليم الآن واحتساب النتيجة؟
+      </p>
+      <div class="modal-actions">
+        <button class="btn btn-secondary" id="btn-modal-cancel">متابعة الحل</button>
+        <button class="btn btn-primary" id="btn-modal-confirm">نعم، تسليم الاختبار</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Application Modules -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
